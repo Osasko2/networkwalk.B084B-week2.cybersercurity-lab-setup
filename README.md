@@ -40,7 +40,71 @@ This table lists each tool used in this project and also its purpose in the proj
 | wafw00f | Detects if a Web Application Firewall protects the site |
 | dnsrecon | Highlights DNS records (NS, MX, SRV, SPF, TXT, SOA) |
 | theHarvester | Collects publicly available information such as email addresses, subdomains, hostnames, IP addresses and other OSINT data related to a target domain |
-## Project Overview
+## 4. Activities Performed.
+## 4.1 Footprinting & Reconnaissance.
+I performed an active reconnaissance against the networkwalks.com domain using six Kali Linux tools: WHOIS, WhatWeb, Nslookup, Curl, Wafw00f and DNSRecon. Each tool was used for different and specific collection of information about the target.
+
+WHOIS was used to view publicly available registration information and also identify the domain's name servers. The result of this reconnaaissance provided detailed information about domain registration, expiry date and hosting infrastructure.
+
+WhatWeb identified the technologies used by networkwalks.com website. The results identified WordPress 7.1, WP Download Manager 3.3.58, email addresss info@networkwalks.com amongst other information exposed by the website.
+
+Nslookup helped to resolve domain name to its IP address. The result provided is 196.232.216.135
+
+Curl with -i was used to inspect the HTTP response headers. This gave additional information about the web application and explosed the WordPress REST API endpoint /wp-json/wp/v2/pages/53.
+
+Wafw00f helped to determine if a Web Application Firewall was protecting the website. Result showed ModSecurity (SpiderLabs).
+
+Finally, DNSRecon was used to highlight DNS records. The results gave information showing name servers, mail servers, SPF/TXT records, service records and DNS software information. 4.2 Reconnaissance with theHarvester
+
+The second activity involved using theHarvester to gather publicly available information about a target domain.
+
+Baidu Search
+
+I first used theHarvester with Baidu as the selected data source:
+
+theHarvester -d microsoft.com -l 1000 -b baidu
+
+The scan returned:
+
+Target: microsoft.com
+Searching Baidu.
+No IPs found.
+No emails found.
+No people found.
+Hosts found: 14
+This demonstrated how theHarvester can identify publicly available hosts and subdomains associated with a target domain.
+
+Multiple Search Sources
+
+I also ran theHarvester using multiple available search sources:
+
+theHarvester -d microsoft.com -l 50 -b all
+
+During this scan, several sources reported that their required API keys were missing. These included sources such as:
+
+Bevigil
+Bitbucket
+BufferOver
+BuiltWith
+Brave Search
+Because the required API keys were not configured, those individual sources could not complete their searches.
+
+However, this was also a useful part of the practical because it demonstrated that some theHarvester data sources require API credentials before they can be used.
+
+Observation
+
+The theHarvester exercise showed how reconnaissance tools can collect publicly available information about a domain without directly accessing or exploiting the target.
+
+The main successful result from the Baidu search was the discovery of five hosts associated with microsoft.com, while no IP addresses, email addresses or people were returned by that particular source. No exploitation or unauthorized access was performed during this activity.
+
+4.3 Network Scanning with Zenmap.
+For the second activity, Zenmap was used to identify network discovery on my local network. Requirements for this practice include; identification of my local IP address and subnet, discovering live hosts, identifying their IP and MAC addresses and generating a network topology.
+
+Firstly, I opened the windows command prompt and typed ipconfig on my windows terminal to identify my local IP address and LAN subnet. I typed the IP address in Zenmap and ran a ping scan to identfy active hosts. The scan identified three live hosts;
+
+10.0.0.1
+10.0.0.15
+After completing the scan, I clicked on the Topology icon displayed on Zenmap, enabled the legend and saved my network topology in PDF format as required by the practical task. I also too a screenshot for easy access.
 
 This repository documents my cybersecurity learning activities,
 reconnaissance exercises, and authorised network assessments.
