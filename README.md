@@ -157,6 +157,23 @@ Regular Internal Network Discovery Organizations should periodically scan their 
 Investigate Unknown Devices Any unfamiliar device identified during an authorized network scan should be investigated and verified to determine whether it is an approved device.
 Perform Security Testing with Authorization Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
 
+## Conclusion
+During Week 2 of my Cybersecurity & Ethical Hacking Internship, I had hands-on experience spanning across footprinting, reconnaissance and network scanning.
+
+For the first activity, I used multiple Kali Linux tools including WHOIS, WhatWeb, Nslookup, cURL, Wafw00f and DNSRecon to gather information about the authorized target domain. I learned how each tool provides a different type of information, from domain and DNS details to web technologies, HTTP headers and WAF identification.
+
+I also used theHarvester to collect publicly available information about a domain. The exercise helped me understand how reconnaissance can reveal hosts and subdomains that may form part of an organization’s external attack surface. In my practical, five hosts were identified from the Baidu search, while no IP addresses, email addresses or people were returned by that particular source.
+
+For the network scanning activity, I used Zenmap to scan my own local network and identify active hosts. I also worked with Windows CMD to identify my local network configuration and used Zenmap’s topology feature to visualize the discovered network.
+
+One of my major takeaways from these exercises is that information gathering is an important part of cybersecurity. Before any exploitation takes place, a security professional can learn a lot by carefully examining publicly available information and understanding how systems and networks respond to different requests.
+
+I also learned the importance of proper documentation. A good security report should clearly explain what was tested, what was discovered, the potential impact of the observations and the recommended security improvements.
+
+Most importantly, these practical exercises reinforced that reconnaissance and network scanning must always be performed within an authorized scope.
+
+All activities documented in this project were carried out as part of an assigned educational cybersecurity exercise or on systems and networks for which I had permission.
+
 
 ## Evidence and Screenshots
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/ace1fae2bbc51106fb9a4a9362cc3da9a0527b77/WhatsApp%20Image%202026-11-08%20at%2012.25.24%20PM.jpeg)
@@ -169,6 +186,4 @@ Perform Security Testing with Authorization Reconnaissance and scanning should o
 ![My Image]([chef.jpg](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/c42d761b0b25e1ea71038e14299567102e73992e/Thehav.jpeg))
 
 
-## Conclusion
 
-Summary of completed activities and lessons learned.
