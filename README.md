@@ -1,19 +1,6 @@
 # networkwalk.B084B-week2.cybersercurity-lab-setup
  penetration testing 
- ## 3. Tools Used.
-
-This table lists each tool used in this project and also its purpose in the project.
-
-| Tool | Purpose |
-|---|---|
-| Kali Linux & Windows | Operating systems used for reconnaissance (gathering information) activities |
-| WHOIS | Used to find domain registration details (owner, dates, name servers, registrar URL) |
-| WhatWeb | Fingerprints web technologies (server, email, IP, plugins, CMS) |
-| nslookup | Resolves domain names to IP addresses using DNS |
-| curl -I | Reads HTTP response headers of the website |
-| wafw00f | Detects if a Web Application Firewall protects the site |
-| dnsrecon | Highlights DNS records (NS, MX, SRV, SPF, TXT, SOA) |
-| theHarvester | Collects publicly available information such as email addresses, subdomains, hostnames, IP addresses and other OSINT data related to a target domain |
+ 
 
 # WK2-PM2 | CYBERSECURITY | NETWORK WALKS
 
@@ -32,7 +19,20 @@ This table lists each tool used in this project and also its purpose in the proj
 | | Phase 3: In Progress |
 
 ---
+## 3. Tools Used.
 
+This table lists each tool used in this project and also its purpose in the project.
+
+| Tool | Purpose |
+|---|---|
+| Kali Linux & Windows | Operating systems used for reconnaissance (gathering information) activities |
+| WHOIS | Used to find domain registration details (owner, dates, name servers, registrar URL) |
+| WhatWeb | Fingerprints web technologies (server, email, IP, plugins, CMS) |
+| nslookup | Resolves domain names to IP addresses using DNS |
+| curl -I | Reads HTTP response headers of the website |
+| wafw00f | Detects if a Web Application Firewall protects the site |
+| dnsrecon | Highlights DNS records (NS, MX, SRV, SPF, TXT, SOA) |
+| theHarvester | Collects publicly available information such as email addresses, subdomains, hostnames, IP addresses and other OSINT data related to a target domain |
 ## Project Overview
 
 This repository documents my cybersecurity learning activities,
