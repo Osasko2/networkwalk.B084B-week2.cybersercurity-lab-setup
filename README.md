@@ -97,7 +97,7 @@ The theHarvester exercise showed how reconnaissance tools can collect publicly a
 
 The main successful result from the Baidu search was the discovery of five hosts associated with microsoft.com, while no IP addresses, email addresses or people were returned by that particular source. No exploitation or unauthorized access was performed during this activity.
 
-4.3 Network Scanning with Zenmap.
+## 4.3 Network Scanning with Zenmap.
 For the second activity, Zenmap was used to identify network discovery on my local network. Requirements for this practice include; identification of my local IP address and subnet, discovering live hosts, identifying their IP and MAC addresses and generating a network topology.
 
 Firstly, I opened the windows command prompt and typed ipconfig on my windows terminal to identify my local IP address and LAN subnet. I typed the IP address in Zenmap and ran a ping scan to identfy active hosts. The scan identified three live hosts;
