@@ -38,6 +38,7 @@ reconnaissance exercises, and authorised network assessments.
 Screenshots and findings from authorised exercises will be added here.
 
 ## Findings and Recommendations
+WhatsApp Image 2026-11-08 at 12.25.24 PM.jpeg
 
 Document identified findings, their risk levels, and recommended
 remediation steps here.
