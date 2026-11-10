@@ -189,6 +189,9 @@ All activities documented in this project were carried out as part of an assigne
 
 ## 👤 Author
 Efosa Osawaru
+
 Cybersecurity Professional B084B
+
 LinkedIn: https://www.linkedin.com/in/efosa-osawaru
+
 📌 Project Information Project Information: Cybersecurity Program at NetworkWalks | Week: 02 : Repository: GitHub
