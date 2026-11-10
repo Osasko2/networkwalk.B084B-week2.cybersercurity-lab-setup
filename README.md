@@ -109,6 +109,26 @@ After completing the scan, I clicked on the Topology icon displayed on Zenmap, e
 This repository documents my cybersecurity learning activities,
 reconnaissance exercises, and authorised network assessments.
 
+## 5. Risk Analysis / Impact.
+Based on the information gathered during the footprinting and network scanning activities, I identified the following potential risks.
+
+S/N	Risk/Findings	Evidence/Observation	Potential Impact	Risk Level
+1	Website technology information exposed	WhatWeb identified WordPress and WP Download Manager	Threat actors could use the exposed version information to identify software that requires security patch	🟠
+2	Server IP address identifiable	Nslookup resolved the domain to 192.232.216.135	Provides information about the network location of the web service	🟡
+3	HTTP technical information exposed	Curl returned HTTP response headers and exposed /wp-json/wp/v2/pages/53	May assist technology fingerprinting and further enumeration	🟡
+4	WAF technology identifiable	Wafw00f identified ModSecurity (SpiderLabs)	Reveals information about the web application's security architecture	🟡
+5	DNS infrastructure information exposed	DNSRecon identified DNS, mail and service-related records	DNS information can help build a broader infrastructure profile	🟠
+6	Publicly discoverable hosts	theHarvester identified five hosts associated with microsoft.com	Publicly discoverable subdomains/hosts may provide additional information about an organization's external attack surface	🟡
+7	Multiple live hosts visible on local network	Zenmap identified three live hosts in the example network	Unauthorized devices may be potentially present on a network	🟠
+Risk level key: 🔴 High 🟠 Medium 🟡 Low
+The risks above are observations from the footprinting and scanning exercises not from confirmed vulnerabilities.
+
+The practical exercises basically involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these three modules.
+
+Therefore, the presence of information such as a software version, IP address or DNS record does not exactly mean that the system itself is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
+
+
+
 ## Tools Used
 
 - Kali Linux
