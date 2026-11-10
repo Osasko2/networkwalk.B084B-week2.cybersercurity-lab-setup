@@ -146,6 +146,17 @@ Therefore, the presence of information such as a software version, IP address or
 - Zenmap
 - Nmap
 - WAFW00F
+## Findings and Recommendations
+Based on the observations from these activities, the following security improvements are recommended:
+
+Publicly exposed technology information should be reviewed. Organizations should conduct a regular review of the information about their website technologies, plugins, CMS platforms and server configuration to ensure unnecessary technical details are not exposed.
+Software Update CMS platforms, plugins and other web technologies should be regularly updated and reviewed for any necessary security patch. 3.HTTP Headers Review HTTP headers should also be reviewed and properly configured to minimize unnecessary technical information that could assist further reconnaissance.
+Regular DNS Records Review DNS records should be periodically reviewed to ensure that only required records, services and infrastructure information are publicly exposed.
+Proper Configuration and Monitoring of the WAF Keep the WAF (ModSecurity) enabled and tuned, since it already blocks naive attacks.
+Regular Internal Network Discovery Organizations should periodically scan their authorized internal networks to identify active devices and maintain an accurate inventory of connected systems.
+Investigate Unknown Devices Any unfamiliar device identified during an authorized network scan should be investigated and verified to determine whether it is an approved device.
+Perform Security Testing with Authorization Reconnaissance and scanning should only be performed against systems and networks where appropriate authorization has been provided.
+
 
 ## Evidence and Screenshots
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/ace1fae2bbc51106fb9a4a9362cc3da9a0527b77/WhatsApp%20Image%202026-11-08%20at%2012.25.24%20PM.jpeg)
@@ -156,11 +167,7 @@ Therefore, the presence of information such as a software version, IP address or
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/c238b54bb11062fc51f251b6a1f7c940e5975205/DnS.jpeg)
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/770e65393232284450ad1533d56f1ea854d78c93/TheHavrst.jpeg)
 ![My Image]([chef.jpg](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/c42d761b0b25e1ea71038e14299567102e73992e/Thehav.jpeg))
-## Findings and Recommendations
 
-
-Document identified findings, their risk levels, and recommended
-remediation steps here.
 
 ## Conclusion
 
