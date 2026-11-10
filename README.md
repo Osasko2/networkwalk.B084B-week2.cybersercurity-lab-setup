@@ -109,23 +109,33 @@ After completing the scan, I clicked on the Topology icon displayed on Zenmap, e
 This repository documents my cybersecurity learning activities,
 reconnaissance exercises, and authorised network assessments.
 
-## 5. Risk Analysis / Impact.
+
+## 5. Risk Analysis / Impact
+
 Based on the information gathered during the footprinting and network scanning activities, I identified the following potential risks.
 
-S/N	Risk/Findings	Evidence/Observation	Potential Impact	Risk Level
-1	Website technology information exposed	WhatWeb identified WordPress and WP Download Manager	Threat actors could use the exposed version information to identify software that requires security patch	🟠
-2	Server IP address identifiable	Nslookup resolved the domain to 192.232.216.135	Provides information about the network location of the web service	🟡
-3	HTTP technical information exposed	Curl returned HTTP response headers and exposed /wp-json/wp/v2/pages/53	May assist technology fingerprinting and further enumeration	🟡
-4	WAF technology identifiable	Wafw00f identified ModSecurity (SpiderLabs)	Reveals information about the web application's security architecture	🟡
-5	DNS infrastructure information exposed	DNSRecon identified DNS, mail and service-related records	DNS information can help build a broader infrastructure profile	🟠
-6	Publicly discoverable hosts	theHarvester identified five hosts associated with microsoft.com	Publicly discoverable subdomains/hosts may provide additional information about an organization's external attack surface	🟡
-7	Multiple live hosts visible on local network	Zenmap identified three live hosts in the example network	Unauthorized devices may be potentially present on a network	🟠
-Risk level key: 🔴 High 🟠 Medium 🟡 Low
-The risks above are observations from the footprinting and scanning exercises not from confirmed vulnerabilities.
+| S/N | Risk/Findings | Evidence/Observation | Potential Impact | Risk Level |
+|:---:|---|---|---|:---:|
+| 1 | Website technology information exposed | WhatWeb identified WordPress and WP Download Manager | Threat actors could use exposed version information to identify software requiring security patches. | 🟠 Medium |
+| 2 | Server IP address identifiable | Nslookup resolved the domain to an IP address. | Provides information about the network location of the web service. | 🟡 Low |
+| 3 | HTTP technical information exposed | Curl returned HTTP response headers and exposed a publicly accessible endpoint. | May assist technology fingerprinting and further enumeration. | 🟡 Low |
+| 4 | WAF technology identifiable | Wafw00f identified ModSecurity (SpiderLabs). | Reveals information about the web application's security architecture. | 🟡 Low |
+| 5 | DNS infrastructure information exposed | DNSRecon identified DNS, mail and service-related records. | DNS information can help build a broader infrastructure profile. | 🟠 Medium |
+| 6 | Publicly discoverable hosts | TheHarvester identified five hosts associated with the domain. | Publicly discoverable subdomains/hosts may provide additional information about an organization's external attack surface. | 🟡 Low |
+| 7 | Multiple live hosts visible on local network | Zenmap identified three live hosts in the example network. | Unauthorized devices may be potentially present on a network. | 🟠 Medium |
 
-The practical exercises basically involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these three modules.
+**Risk level key:**
+- 🔴 High
+- 🟠 Medium
+- 🟡 Low
 
-Therefore, the presence of information such as a software version, IP address or DNS record does not exactly mean that the system itself is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
+The risks above are observations from the footprinting and scanning exercises, not confirmed vulnerabilities.
+
+The practical exercises basically involved information gathering and host discovery. No exploitation or vulnerability validation was performed as part of these modules.
+
+Therefore, the presence of information such as a software version, IP address or DNS record does not necessarily mean that the system itself is vulnerable. Further authorized security testing would be required to confirm any actual vulnerability.
+
+
 
 
 
