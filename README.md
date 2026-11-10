@@ -42,8 +42,6 @@ reconnaissance exercises, and authorised network assessments.
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/c238b54bb11062fc51f251b6a1f7c940e5975205/DnS.jpeg)
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/770e65393232284450ad1533d56f1ea854d78c93/TheHavrst.jpeg)
 ![My Image]([chef.jpg](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/c42d761b0b25e1ea71038e14299567102e73992e/Thehav.jpeg))
-
-
 ## Findings and Recommendations
 
 
