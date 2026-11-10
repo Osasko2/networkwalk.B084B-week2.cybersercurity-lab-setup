@@ -187,4 +187,8 @@ All activities documented in this project were carried out as part of an assigne
 
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/5002ac59de46147d13b313ee9c2a499df40dcf13/zenmap.jpeg)
 
-
+## 👤 Author
+Efosa Osawaru
+Cybersecurity Professional B084B
+LinkedIn: https://www.linkedin.com/in/efosa-osawaru
+📌 Project Information Project Information: Cybersecurity Program at NetworkWalks | Week: 02 : Repository: GitHub
