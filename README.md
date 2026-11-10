@@ -35,6 +35,7 @@ reconnaissance exercises, and authorised network assessments.
 
 ## Evidence and Screenshots
 ![My Image](https://github.com/Osasko2/networkwalk.B084B-week2.cybersercurity-lab-setup/blob/ace1fae2bbc51106fb9a4a9362cc3da9a0527b77/WhatsApp%20Image%202026-11-08%20at%2012.25.24%20PM.jpeg)
+![My Image](chef.jpg)
 
 Screenshots and findings from authorised exercises will be added here.
 
